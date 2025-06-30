@@ -1,0 +1,8 @@
+<div>
+  <h2>WebSocket Mensagens</h2>
+  <ul>
+    <li *ngFor="let mensagem of mensagensRecebidas">{{ mensagem }}</li>
+  </ul>
+  <input #mensagemInput type="text" />
+  <button (click)="enviarMensagem(mensagemInput.value)">Enviar</button>
+</div>
